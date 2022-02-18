@@ -6,14 +6,16 @@ Este programa foi criado para atender os requisitos da Academia Capgemini 2022, 
 
 A estrutura do projeto está dividida em duas pastas, onde:
 
-- `src`: Contém a aplicação java desenvolvida (arquivo .java)
-- `bin`: Resultado compilado da execução do programa (arquivo .class)
+- `.vscode`: Configuração padrão de um projeto Java para o Visual Studio Code.
+- `.lib`: Dependências externas.
+- `src`: Contém a aplicação java desenvolvida (arquivo .java).
+- `bin`: Resultado compilado da execução do programa (arquivo .class).
 
 ## Execução
 
 Para executar o arquivo .java, navegue até a pasta src e execute os seguintes comandos:
 ```
-javac Desafio.java (Opcional, caso o java não identifique o arquivo .class)
+javac Desafio.java (Opcional, caso o Java não identifique o arquivo .class)
 java Desafio.java [NUMERO DA QUESTÃO] [ENTRADA]
 ```
 ## Opções
