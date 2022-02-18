@@ -1,18 +1,29 @@
-## Getting Started
+## Início
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este programa foi criado para atender os requisitos da Academia Capgemini 2022, respondendo as questões encontradas em: https://docs.google.com/document/d/1fAzE01t6hEyg8JrbRo7vOA3K2W-NYisF/
 
-## Folder Structure
+## Estrutura das Pastas
 
-The workspace contains two folders by default, where:
+A estrutura do projeto está dividida em duas pastas, onde:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- `src`: Contém a aplicação java desenvolvida (arquivo .java)
+- `bin`: Resultado compilado da execução do programa (arquivo .class)
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Execução
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Para executar o arquivo .java, navegue até a pasta src e execute os seguintes comandos:
+```
+javac Desafio.java (Opcional, caso o java não identifique o arquivo .class)
+java Desafio.java [NUMERO DA QUESTÃO] [ENTRADA]
+```
+## Opções
 
-## Dependency Management
+- `[NÚMERO DA QUESTÃO]`: Diz respeito as questões encontrados no documento, em ordem. Informar um número entre 1 - 3.
+- `[ENTRADA]`: Entrada desejada para aquela questão.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Exemplos
+```
+java Desafio.java 1 6
+java Desafio.java 2 Ya3
+java Desafio.java 3 ovo
+```
