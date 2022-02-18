@@ -1,7 +1,6 @@
 import java.util.Arrays;
 public class Desafio {
 
-
     /*
      *   Este programa foi criado para atender os requisitos da Academia Capgemini 2022,
      *   respondendo as questões encontradas em: https://docs.google.com/document/d/1fAzE01t6hEyg8JrbRo7vOA3K2W-NYisF/
@@ -30,7 +29,7 @@ public class Desafio {
         }
     }
 
-    static void questao02(String senha){
+    static int questao02(String senha){
 
         /*
          *   Esta função recebe uma senha e faz um tratamento, segundo os requisitos, para
@@ -70,14 +69,16 @@ public class Desafio {
 
         //Checa se a senha possui a quantidade mínima de caracteres
         //e imprime na tela a quantidade de caracteres a serem adicionados
-        if (senha.length() + contador < QTD_MINIMA_CHAR)
+        if (senha.length() + contador < QTD_MINIMA_CHAR){
             System.out.println(contador + QTD_MINIMA_CHAR-(senha.length()+contador));
-        else    
-            System.out.println(0);
+            return contador + QTD_MINIMA_CHAR-(senha.length()+contador);
+        }else{    
+            System.out.println(contador);
+            return contador;
+        }
     }
 
-
-    static void questao03(String palavra){
+    static int questao03(String palavra){
 
         /*
          *  Esta função recebe uma palavra e checa se ela possui substrings que sejam
@@ -91,7 +92,7 @@ public class Desafio {
             for (int j = 0; j < palavra.length(); j++) {
                 for (int k=j+1; k < palavra.length()-i; k++){
                     //Converte as substrings para vetores de char
-                    char str1[] = palavra.substring(j,j+1+i).toCharArray();
+                    char str1[] = palavra.substring(j,j+i+1).toCharArray();
                     char str2[] = palavra.substring(k,k+i+1).toCharArray();
                     //Checa se possuem o mesmo tamanho e as ordena
                     if (str1.length == str2.length){
@@ -106,7 +107,7 @@ public class Desafio {
             }
         }
         System.out.println(contador);
-
+        return contador;
     }
     public static void main(String[] args) throws Exception {
 
